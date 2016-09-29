@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset='utf-8'>
+        <title>Weekend Challenge 1</title>
+        <script src='jquery-3.1.0.min.js'></script>
+        <script src='weekend.js'></script>
+        <link rel='stylesheet' href='weekend.js'>
+    </head>
+
+    <body>
+        <form id="empInfo">
+            <label for="empFirstName">First Name:</label>
+            <input type="text" id="empFirstName" name="empFirstName">
+
+            <label for='empLastName'>Last Name:</label>
+            <input type="text" id='empLastName' name='empLastName'>
+
+            <label for='title'>Job Title:</label>
+            <input type="text" id='title' name='title'>
+
+            <label for='id'>ID:</label>
+            <input type="number" id='id' name='id'>
+
+            <label for='salary'>Salary:</label>
+            <input type="number" id='salary' name='salary'>
+
+            <button type='submit'>Submit</button>
+        </form>
+        <h2>Employee List</h2>
+        <table>
+            <tr>
+                <th>
+                    First Name
+                </th>
+                <th>
+                    Last Name
+                </th>
+                <th>
+                    Title
+                </th>
+                <th>
+                    ID
+                </th>
+                <th>
+                    Salary
+                </th>
+                <th>
+                    Remove
+                </th>
+            </tr>
+        </table>
+        <p>
+            Total Monthly Salary: <span id='monthlySalary'></span>
+        </p>
+    </body>
+
+</html>
+
+
+
+
+<!-- The application should first have an input form that collects:
+
+The Employee's First and Last name
+The Employee's ID Number
+The Employee's Job Title
+The Employee's Salary (Yearly)
+The form should have a submit button that
+
+clears out the form and
+stores the submitted information.
+Then, that information should be appended to the DOM so the user of the application can see the information they just entered.
+
+Finally, your logic should calculate all of the employee salaries and report back what the monthly cost of salaries is. -->
